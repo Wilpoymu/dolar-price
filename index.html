@@ -27,7 +27,7 @@
                 table.appendChild(thead);
                 
                 const tbody = document.createElement('tbody');
-                data.forEach(item => {
+                data.slice(0, 10).forEach(item => {
                     const row = document.createElement('tr');
                     Object.values(item).forEach(value => {
                         const td = document.createElement('td');
